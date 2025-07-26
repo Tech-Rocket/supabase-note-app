@@ -1,7 +1,7 @@
 // import { shadow } from "@/styles/utils";
 import Image from "next/image";
 import Link from "next/link";
-// import { Button } from "./ui/button";
+import { Button } from "./ui/button";
 // import DarkModeToggle from "./DarkModeToggle";
 // import LogOutButton from "./LogOutButton";
 // import { getUser } from "@/auth/server";
@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export default async function Header() {
   //   const user = await getUser();
+  const user = null;
 
   return (
     <header
@@ -29,12 +30,12 @@ export default async function Header() {
           priority
         />
 
-        <h1 className="flex flex-col pb-1 text-2xl leading-6 font-semibold">
+        <h1 className="flex flex-col pb-1 text-xl leading-6 font-semibold">
           GOAT <span>Notes</span>
         </h1>
       </Link>
 
-      {/* <div className="flex gap-4">
+      <div className="flex gap-4">
         {user ? (
           <LogOutButton />
         ) : (
@@ -49,8 +50,8 @@ export default async function Header() {
             </Button>
           </>
         )}
-        <DarkModeToggle />
-      </div> */}
+        {/* <DarkModeToggle /> */}
+      </div>
     </header>
   );
 }
