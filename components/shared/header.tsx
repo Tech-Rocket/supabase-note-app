@@ -1,8 +1,8 @@
 // import { shadow } from "@/styles/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
-// import DarkModeToggle from "./DarkModeToggle";
+import { Button } from "../ui/button";
+import DarkModeToggle from "../dark-mode-toggle";
 // import LogOutButton from "./LogOutButton";
 // import { getUser } from "@/auth/server";
 // import { SidebarTrigger } from "./ui/sidebar";
@@ -37,7 +37,8 @@ export default async function Header() {
 
       <div className="flex gap-4">
         {user ? (
-          <LogOutButton />
+          // <LogOutButton />
+          <p>Logout Button</p>
         ) : (
           <>
             <Button asChild>
@@ -50,7 +51,7 @@ export default async function Header() {
             </Button>
           </>
         )}
-        {/* <DarkModeToggle /> */}
+        <DarkModeToggle />
       </div>
     </header>
   );
