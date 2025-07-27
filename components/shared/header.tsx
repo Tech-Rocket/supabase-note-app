@@ -7,10 +7,11 @@ import DarkModeToggle from "../dark-mode-toggle";
 import LogOutButton from "../log-out-button";
 // import { getUser } from "@/auth/server";
 // import { SidebarTrigger } from "./ui/sidebar";
+import { BounceButton } from "@/components/ui/bounce-button";
 
 export default async function Header() {
   //   const user = await getUser();
-  const user = 1;
+  const user = null;
 
   return (
     <header
