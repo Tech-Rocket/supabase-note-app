@@ -7,10 +7,10 @@ export default function LoginPage() {
       <div className="mt-20 flex flex-1 flex-col items-center">
         <Card className="w-full max-w-[33rem] rounded-sm shadow">
           <CardHeader className="mb-4">
-            <CardTitle className="text-center text-3xl">Login</CardTitle>
+            <CardTitle className="text-center text-3xl">Register</CardTitle>
           </CardHeader>
 
-          <AuthForm type="login" />
+          <AuthForm type="register" />
         </Card>
       </div>
     </>
