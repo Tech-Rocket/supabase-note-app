@@ -17,9 +17,7 @@ export default function AuthForm(props: AuthFormTypes) {
   const isLoginForm = props.type === "login";
   const router = useRouter();
 
-  const handleSubmit = (formData: FormData) => {
-    console.log("Form submitted");
-  };
+  const handleSubmit = (formData: FormData) => {};
 
   const [isPending, startTranstion] = useTransition();
 
